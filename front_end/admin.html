@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1>Panel Administrador</h1>
+
+<button onclick="logout()">Cerrar sesión</button>
+
+<h3>Crear usuario</h3>
+
+<input id="firstName" placeholder="First Name">
+<input id="lastName" placeholder="Last Name">
+<input id="email" placeholder="Email">
+<input id="username" placeholder="Username">
+<input id="password" placeholder="Password">
+<input id="role" placeholder="Role (admin o student)">
+
+<button onclick="createUser()">Crear Usuario</button>
+
+<h3>Lista de usuarios</h3>
+
+<table border="1">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Username</th>
+    <th>Acciones</th>
+  </tr>
+  </thead>
+
+  <tbody id="table"></tbody>
+
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
